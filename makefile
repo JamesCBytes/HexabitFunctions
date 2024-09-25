@@ -8,4 +8,4 @@ hexabit.o: hexabit.h hexabit.cpp
 	g++ -c hexabit.cpp
 
 clean: 
-	rm *.0 hex
+	rm *.o hex
