@@ -1,0 +1,5 @@
+The program is composed of a hexabit class where all the functions and operations for a calculation will be stored
+The program only has an add option at the moment
+You can read from the given file 
+Soon to come you can input your own hexadecimals
+The program works by first reading in the file then parsing the line then adding the hexadecimals to the class where the class operations take care of the addition and determining whether or not there is overflow
