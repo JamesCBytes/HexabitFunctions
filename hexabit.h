@@ -7,27 +7,56 @@
 #include <cstdint>
 #include <iomanip>
 using namespace std;
+template <typename ItemType>
 class Hexabit{
     string type;
-    uint32_t operand1, operand2;
+    ItemType operand1, operand2;
     
     public:
-    Hexabit();
-    Hexabit(string, uint32_t, uint32_t);
-    Hexabit(const Hexabit&);
+    Hexabit<ItemType>();
+    Hexabit<ItemType>(string, ItemType, ItemType);
+    Hexabit<ItemType>(const Hexabit&);
 
     string getType();
     void setType(string);
 
-    uint32_t getOperand1();
-    void setOperand1(uint32_t);
+    ItemType getOperand1();
+    void setOperand1(ItemType);
 
-    uint32_t getOperand2();
-    void setOperand2(uint32_t);
+    ItemType getOperand2();
+    void setOperand2(ItemType);
 
     void ADD();
+    void ADDS();
+
+    void AND();
+    void ANDS();
+
+    void ASR();
+    void ASRS(); 
+
+    void LSR();
+    void LSRS(); 
+
+    void LSL();
+    void LSLS(); 
+
+    void NOT();    
+    void NOTS(); 
+
+    void ORR();  
+    void ORRS();
+
+    void SUB();  
+    void SUBS(); 
+
+    void XOR();
+    void XORS(); 
+
+
 
 
 
 };
+#include "hexabit.cpp"
 #endif
